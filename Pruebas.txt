@@ -1,0 +1,227 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package Utilitarios;
+
+import Controlador.CursoCtrl;
+import Controlador.DiplomaCtrl;
+import Controlador.FacturaCtrl;
+import Controlador.UsuarioCtrl;
+import Modelo.Curso;
+import Modelo.Diploma;
+import Modelo.Factura;
+import Modelo.Pregunta;
+import Modelo.Usuario;
+import java.util.ArrayList;
+
+/**
+ *
+ * @author Jekse
+ */
+public class Pruebas {
+    /*private static CursoCtrl curCtr=new CursoCtrl();
+    private static Curso cur;
+    private static UsuarioCtrl usuCt=new UsuarioCtrl();
+    private static Usuario usu;
+    private static FacturaCtrl facCt=new FacturaCtrl();
+    private static Factura fac;
+    private static DiplomaCtrl dipCt=new DiplomaCtrl();
+    private static Diploma diplo;
+    private static Pregunta preg;*/
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //pruebasCursos(); FUNCIONA
+        //pruebasUsuarios(); FUNCIONA
+        //pruebasFacturas(); FUNCIONA
+        //pruebasDiplomas(); FUNCIONA
+        
+    }
+    
+    public static void pruebasUsuarios(){
+        //registrar usuario
+        //usuario 1: cedula:103045 contraseña:soycool123
+        //usuario 2: cedula:103578 contraseña:dragonball
+        //admin: cedula: 1 contraseña: admin123
+        /*usu=new Usuario("admin123",
+                        "deux",
+                        2,
+                        1,
+                        999);
+        if(usuCt.registrar(usu)){
+            System.out.println("Usuario resgistrado");
+        }else{
+            System.out.println("no se pudo resgitrar");
+        }
+        
+        //buscar usuario
+        System.out.println(usuCt.buscarUsuario(103578).getCedula());
+        System.out.println(usuCt.buscarUsuario(103578).getContraseña());
+        System.out.println(usuCt.buscarUsuario(103578).getEdad());
+        System.out.println(usuCt.buscarUsuario(103578).getNombre());
+        System.out.println(usuCt.buscarUsuario(103578).getTipoUsuario());
+        //inicio sesion
+        switch(usuCt.inicioSesion(103578,"dragonball")){
+            case 1 -> System.out.println("Estudiante");
+            case 2 -> System.out.println("Admin");
+            default -> System.out.println("No registrado");
+        }*/
+    }
+    
+    public static void pruebasCursos(){
+        //Añadir curso
+        /*cur=new Curso("pruebas2",
+                      2,
+                      700000,
+                      "foto2",
+                      "aqui aprenderas mas pana");
+        if(curCtr.añadirCurso(cur)){
+            System.out.println("Curso añadido");
+        }else{
+            System.out.println("No se pudo añadir curso");
+        }
+        //buscar curso
+        System.out.println(curCtr.buscarCurso(2).getCodigoCurso());
+        System.out.println(curCtr.buscarCurso(2).getDescripcion());
+        System.out.println(curCtr.buscarCurso(2).getFotoCurso());
+        System.out.println(curCtr.buscarCurso(2).getNombreCurso());
+        System.out.println(curCtr.buscarCurso(2).getValorCurso());
+        //eliminar curso
+        if(curCtr.eliminarCurso(1)){
+            System.out.println("Curso eleminado");
+        }else{
+            System.out.println("no se elimino");
+        }
+        if(curCtr.buscarCurso(1)==null)System.out.println("no esta bro");
+        
+        cur=new Curso("pruebas2",
+                      2,
+                      800000,
+                      "foto2",
+                      "aqui aprenderas mas pana y se actualizo :v");
+        
+        if(curCtr.actualizarCurso(cur)){
+            System.out.println("Curso actualizado");
+        }else{
+            System.out.println("no se pudo actualizar");
+        }        
+        System.out.println(curCtr.buscarCurso(2).getCodigoCurso());
+        System.out.println(curCtr.buscarCurso(2).getDescripcion());
+        System.out.println(curCtr.buscarCurso(2).getFotoCurso());
+        System.out.println(curCtr.buscarCurso(2).getNombreCurso());
+        System.out.println(curCtr.buscarCurso(2).getValorCurso());
+        //inscribirse a un curso
+        boolean bandera=curCtr.inscribirse(2,
+                           usuCt.buscarUsuario(103578).getCedula(),
+                           usuCt.buscarUsuario(103578).getNombre(),
+                           "credito",
+                           "cra algo numero algo avenida rica");
+        if(bandera){
+            System.out.println("inscripcion realizada");
+        }else{
+            System.out.println("no se pudo realizar la inscripcion");
+        }
+        
+        //cursos por persona
+        for(int i=0;i<curCtr.cursosPersona(103578).size();i++){
+            System.out.println(curCtr.cursosPersona(103578).get(i).getCodCurso());
+        }
+        //Si una persona esta inscrita en un curso
+        if(curCtr.inscrito(2,103045)){
+            System.out.println("Si estoy inscrito");
+        }else{
+            System.out.println("No estoy inscrito");
+        }
+        //Todos los inscritos
+        for(int i=0;i<curCtr.inscritos().size();i++){
+            System.out.println(curCtr.inscritos().get(i).getCedula());
+        }*/
+    }
+    
+    public static void pruebasFacturas(){
+        //buscar factura
+        /*
+        System.out.println(facCt.buscarFactura(103578,2).getCedula());
+        System.out.println(facCt.buscarFactura(103578,2).getCodCurso());
+        System.out.println(facCt.buscarFactura(103578,2).getCodigoFactura());
+        System.out.println(facCt.buscarFactura(103578,2).getCosto());
+        System.out.println(facCt.buscarFactura(103578,2).getDireccion());
+        System.out.println(facCt.buscarFactura(103578,2).getEstadoPago());
+        System.out.println(facCt.buscarFactura(103578,2).getMetodoPago());
+        System.out.println(facCt.buscarFactura(103578,2).getNombre());*/
+        //pagar factura
+        //System.out.print(facCt.pagarFactura(103578, 2, 800000));
+        //facturas por persona
+        /*ArrayList<Factura> listaFactu=facCt.facturasPersona(103578);
+        for(int i=0;i<listaFactu.size();i++){
+            System.out.println(listaFactu.get(i).getCodigoFactura());
+        }
+        //Todas las facturas
+        ArrayList<Factura> todasFac=facCt.todasFacturas();
+        for(int i=0;i<todasFac.size();i++){
+            System.out.println(todasFac.get(i).getCodigoFactura());
+        }*/
+    }
+    
+    public static void pruebasDiplomas(){
+        //guardar preguntas curso
+        /*preg=new Pregunta(2,"el agua moja?");
+        if(dipCt.generarPregunta(preg)) System.out.println("Pregunta guardada");
+        preg=new Pregunta(2,"el fuego quema?");
+        if(dipCt.generarPregunta(preg)) System.out.println("Pregunta guardada");
+        preg=new Pregunta(2,"eres humano?");
+        if(dipCt.generarPregunta(preg)) System.out.println("Pregunta guardada");
+        preg=new Pregunta(2,"sabes leer?");
+        if(dipCt.generarPregunta(preg)) System.out.println("Pregunta guardada");
+        preg=new Pregunta(2,"los perros dicen güau?");
+        if(dipCt.generarPregunta(preg)) System.out.println("Pregunta guardada");
+        
+        //preguntas curso y responder
+        ArrayList<Pregunta> lista=new ArrayList<>();
+        int i=1;
+        for(Pregunta aux:dipCt.preguntasCurso(2)){
+            aux.setCedula(103045);            
+            aux.setRespuesta("Respuesta "+i);
+            lista.add(aux);
+            i++;
+        }        
+        if(dipCt.responderPreguntas(lista)){
+            System.out.println("Respuestas guardadas");
+        }else{
+            System.out.println("No se pudo guardar las respuestas");
+        }
+        //Calificar y certificar
+        ArrayList<Pregunta> lista=new ArrayList<>();
+        for(Pregunta aux:dipCt.respuestasPersona(103045)){
+            aux.setCorrecto(true);
+            lista.add(aux);            
+        }
+        if(dipCt.certificar(lista, 103045, 2)){
+            System.out.println("Felicidades");
+        }else{
+            System.out.println("Sigue estudiando");
+        }
+        //Buscar diploma
+        System.out.println(dipCt.buscarDiploma(103045, 2).getNOMBRE_INSTITUCION());
+        
+        //Buscar diplomas por persona    
+        for(Diploma aux:dipCt.diplomasPersona(103045)){
+            System.out.println(aux.getTitulo());
+        }
+        */
+      
+    }
+    public static void pruebasFacturas(){
+    //subir imagenes
+        /*SubirImagenes subir=new SubirImagenes();
+        
+        if(subir.subir("C:\\Users\\Jekse\\Downloads\\prueba.jpg","sistemas")){
+            System.out.println("subida");
+        }else{
+            System.out.println("no subida");
+        }*/
+    }  
+    
+}
